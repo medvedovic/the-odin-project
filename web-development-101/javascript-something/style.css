@@ -1,0 +1,16 @@
+#clearBtn { width: 100px; display: block; margin: 10px auto; }
+
+.main {
+    width:960px;
+    margin: 5px auto; 
+    outline: 1px solid black;
+    overflow: hidden;
+}
+
+.square {
+    display:inline-block;
+    border: 1px solid #d1d1d1;
+    float:left;
+    margin: 0px 1px 1px 0px;
+    background-color: #fff;
+}

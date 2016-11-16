@@ -1,0 +1,127 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#header {
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	background-color: #000;
+}
+
+#header ul {
+	background-color: #000;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#header li {
+	float: left;
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+}
+
+#header li.pull-right {
+	float: right;
+}
+
+#header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#header a.new_article {
+	padding:4px 11px;
+	font-size:.9em;
+	-moz-box-shadow:rgba(255, 255, 255, 0.4) 0 -1px inset;
+	-webkit-box-shadow:rgba(255, 255, 255, 0.4) 0 -1px inset;
+	-o-box-shadow:rgba(255, 255, 255, 0.4) 0 -1px inset;
+	box-shadow:rgba(255, 255, 255, 0.4) 0 -1px inset;
+	-moz-border-radius:1.2em;
+	-webkit-border-radius:1.2em;
+	-o-border-radius:1.2em;
+	-ms-border-radius:1.2em;
+	-khtml-border-radius:1.2em;
+	border-radius:1.2em;
+	background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
+	background-image:-moz-linear-gradient(#ffffff,#cccccc);
+	background-image:linear-gradient(#ffffff,#cccccc);
+	color:#000;
+	text-decoration:none;
+}
+
+#header a.new_article:hover {
+	color:#2d4159;
+}
+
+nav {
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Poiret One', cursive;
+	padding: 10px;
+}
+
+nav a {
+	color:#CD523C;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+#top-three {
+	text-align: center;
+}
+
+#top-three li {
+	display: inline;	
+}
+
+#top-three a {
+	color:#2d4159;
+	text-decoration: none;
+}
+
+#top-three a:hover {
+	color:#000;
+}
+
+footer {
+	background-color: #1f1f1f;
+	color: #fff;
+	padding: 10px 15px;
+	border-top: 5px solid #000;
+	margin: 0px -20px 0px -20px;
+}
+
+footer li {
+	display: inline;
+}
+
+footer li.pull-right {
+	float:right;
+}
+
+footer li a {
+	text-decoration: none;
+	color:#fff;
+}
+
+footer li a:hover {
+	color: #fff;
+}
+

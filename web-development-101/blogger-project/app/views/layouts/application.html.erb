@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BloggerProject</title>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+</head>
+<body>
+	<div id="header">
+		<ul>
+			<% if logged_in? %>
+				<li><%= "Logged in as #{current_user.email}" %></li>
+				<li> | </li>
+				<li><%= link_to "Authors", authors_path %></li>
+				<li> | </li>
+				<li><%= link_to "My Profile", author_path(current_user) %></li>
+				<li> | </li>
+				<li><%= link_to "Create a New Article", new_article_path, class: "new_article" %></li>
+				<li class="pull-right"><%= link_to "Logout", logout_path %></li>
+			<% else %>
+				<li>Not logged in</li>
+				<li class="pull-right"><%= link_to "Login", login_path %></li>
+			<% end %>
+		</ul>	
+	</div>
+	<nav>
+		<%= link_to "Articles", articles_path, class: "menu_item" %> |
+		<%= link_to "Tags", tags_path %>
+	</nav>
+	<hr/>
+	<div id="top-three">
+		<ul>			
+			<li><b>Top 3 Articles:</b></li>
+			<% Article.all.order(view_count: :desc)[0..2].each do |article| %>
+				<li> | </li>
+				<li><%= link_to article.title, article_path(article) %></li>
+			<% end %>
+		</ul>
+	</div>
+	<hr/>
+	<div id="container">
+		<div id="content">
+			<%= yield %>
+		</div>
+	</div>
+	<footer>
+		<ul>
+			<li>Whatever</li>
+			<li class="pull-right"><a href="">Facebook</a></li>
+		</ul>
+	</footer>
+	<p class="flash">
+		<%= flash.notice %>
+	</p>
+</body>
+</html>

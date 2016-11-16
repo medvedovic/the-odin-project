@@ -1,0 +1,17 @@
+<h1>All Articles</h1>
+<hr/>
+
+<ul id="articles">
+	<% @articles.each do |article| %>
+		<div class="date">
+			<span><%= article.created_at.strftime("%d") %></span><br/>
+			<%= article.created_at.strftime("%B / %Y") %>
+		</div>
+		<% if article.image.exists? %>
+			<%= image_tag(article.image.url, class: 'thumbnail') %>
+		<% end %>
+		<li><%= link_to article.title, article_path(article), class: 'article_title' %>
+		 by <%= link_to article.author.username, authors_path(article.author) %></li>
+		<hr/>
+	<% end %>
+</ul>

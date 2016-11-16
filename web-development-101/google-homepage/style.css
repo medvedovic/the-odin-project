@@ -1,0 +1,128 @@
+html, body {
+	margin: 0px;
+}
+
+.btn {
+	background-color: #f7f7f7;
+	padding:10px 20px;
+	border-radius: 2px;
+}
+
+/*NAVIGATION*/
+.navigation {
+	width: 100%; height: 30px;
+	margin: 10px 0 0 -20px;
+	text-align: right;
+	display: block;
+}
+.navigation ul li { display: inline-block; }
+.navigation img { height: 18px; margin: 0px 10px; }
+
+.navigation a {
+	color:#4d4d4d;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 5px 5px;
+}
+.navigation a:hover { text-decoration: underline; }
+.navigation .nav-btn {
+	background-color: #4485f5;
+	color:#fff;
+	font-weight: bold;
+	padding: 8px 16px;
+}
+
+/*MAIN*/
+.main {
+	width: 100%;
+	text-align: center;
+	margin-top: 150px;
+}
+
+.main .logo {
+	height: 100px;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Googlelogo.png/800px-Googlelogo.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 269px 95px;
+	position: relative;
+}
+
+.main .logo h4 {
+	color: #777;
+	font-family: Arial;
+	position: absolute;
+	top: 50; right: 470;
+}
+
+.main .form #searchInput {
+	width: 600px; height: 40px;
+	margin-top: 30px;
+}
+
+.main .form #searchInput:hover {
+	border: 1px solid #000;;
+}
+.main .form ul li {
+	display: inline-block;
+	margin: 30px 5px 0px 5px;
+}
+
+.main .srch-btn {
+	color:#777;
+	font-family: Arial;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.main .srch-btn:hover {
+	color:#000;
+	border: 1px solid #777;
+	border-radius: 0px;
+}
+
+.main .srch-btn:active {
+	border: 1px solid lightblue;
+
+}
+
+.main p {
+	margin-top: 30px;
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.main a {
+	color:blue;
+	text-decoration: none;
+}
+
+/*FOOTER*/
+.footer {
+	width: 100%; height: 40px;
+	position: fixed;
+	bottom: 0px;
+	border-top: 1px solid #777;
+	background-color: #f2f2f2;
+}
+
+.footer ul { margin: 0; padding: 0 15px 0 15px }
+.footer ul li {	
+	display: inline-block; 
+	line-height: 40px;
+	padding: 0px 15px 0px 15px;
+}
+
+.footer .l_side { float: left; }
+.footer .r_side { float: right; }
+
+.footer a {
+	color: #4d4d4d;
+	font-family: Arial;
+	font-size:13px;
+	text-decoration: none;
+}
+
+.footer a:hover { text-decoration: underline; }
