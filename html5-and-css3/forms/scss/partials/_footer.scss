@@ -1,0 +1,48 @@
+footer {
+    color: $default-light-font-color;
+    font: $default-font;
+    ul {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    a {
+        font-size: 13px;
+        text-decoration: none;
+        color: $default-light-font-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    div {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        div.logo {
+            display: inline-block;
+            width: 120px;
+            height: 45px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        div.norton {
+            background-image: url('../graphic/norton.png');
+        }
+        div.truste {
+            background-image: url('../graphic/truste.png');
+        }
+    }
+
+
+    p {
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 100px;
+    }
+}
