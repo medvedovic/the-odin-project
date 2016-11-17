@@ -1,0 +1,75 @@
+footer {
+    margin-top: 100px;
+    display: block;
+    background-color: #fff;
+    padding: 16px 32px;
+}
+
+footer .settings {
+    border-bottom: 1px solid #C6C6C6;
+    padding-bottom: 10px;
+}
+
+footer .settings .logo {
+    float:left;
+    display: inline-block;
+    background-image: url('../graphic/icon-big.jpg');
+    background-size: 73px 28px;
+    background-repeat: no-repeat;
+    width: 73px;
+    height: 30px;
+}
+
+footer .settings .btn {
+    float: left;
+    padding: 6px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #C6C6C6;
+    border-radius: 3px;
+    color: #333;
+    text-decoration: none;
+    font: 400 11px sans-serif;
+}
+
+footer .settings .btn span {
+    font-weight: 700;
+}
+
+footer ul {
+    margin-top: 10px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+    font: 700 12px sans-serif;
+}
+
+footer ul li a:hover {
+    color: #5ec0eb;
+    text-decoration: underline;
+}
+
+footer ul.small ul {
+    margin-top: 0;
+}
+
+footer ul.small li {
+    padding: 5px;
+}
+
+footer ul.small li a {
+    font-size: 11px;
+    font-weight: 400;
+    color: #a4a4a4;
+}
+
+footer ul.small li a:hover {
+    color: #5ec0eb;
+    text-decoration: underline;
+}

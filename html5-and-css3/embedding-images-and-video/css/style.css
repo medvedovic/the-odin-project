@@ -1,0 +1,243 @@
+.clear {
+    clear: both;
+}
+
+body {
+    background-color: #f1f1f1;
+    min-width: 320px;
+}
+
+main {
+    margin: 10px auto 0 auto;
+    max-width: 1706px;
+}
+
+main .container {
+    float: left;
+    width: 1280px;
+    background: none;
+    padding: 0;
+}
+
+main .container video {
+    padding: 0;
+}
+
+main .container .title {
+    background: #fff;
+    margin-top: 10px;
+    padding: 16px;
+}
+
+main .container .title h1 {
+    font: 700 20px sans-serif;
+    color: #333;
+}
+
+main .container .title .artist {
+    border-bottom: 1px solid #c0c0c0;
+    padding: 10px 0;
+}
+
+main .container .title .artist .band-pic {
+    background-image: url('../graphic/band.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    float: left;
+}
+
+main .container .title .artist .wrapper {
+    height: 48px;
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+}
+
+main .container .title .artist .wrapper p {
+    font-size: 12px;
+    line-height: 24px;
+    font-family: sans-serif;
+}
+
+main .container .title .artist .wrapper p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+ main .container .title .artist .wrapper .subscription {
+     font-size: 0;
+ }
+
+main .container .title .artist .wrapper .subscription a {
+    line-height: 24px;
+    color: #fff;
+    font-weight: 400;
+    background-color: #e32c27;
+    background-image: url('../graphic/logo-small-inverted.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 6px;
+    padding: 6px 8px 6px 30px;
+    font-size: 12px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+main .container .title .artist .wrapper .subscription a:hover {
+    background-color: #cc181e;
+}
+
+main .container .title .artist .wrapper .subscription span {
+    border: 1px solid #C6C6C6;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: none;
+    background-color: #fafafa;
+    color: #737377;
+    font-size: 11px;
+    padding: 6px 5px;
+    margin-left: -1px;
+}
+
+main .container .title span.counter {
+    line-height: 24px;
+    font: 500 20px sans-serif;
+    color: #333;
+    float: right;
+    margin-top: 24px;
+}
+
+main .container .title ul {
+    padding-top: 6px;
+}
+
+main .container .title ul li {
+    display: inline-block;
+    height: 28px;
+    padding: 0px 10px;
+}
+
+main .container .title ul li a {
+    float:left;
+    line-height: 28px;
+    height: 28px;
+    font-weight: 300;
+}
+
+main .container .title ul li span {
+    float:left;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-size: 20px;
+    background-position-y: 4px;
+    background-repeat: no-repeat;
+}
+
+main .container .title ul .add {
+    background-image: url('../graphic/icon-add.png');
+}
+
+main .container .title ul .share {
+    background-image: url('../graphic/icon-share.png');
+}
+
+main .container .title ul .more {
+    background-image: url('../graphic/icon-more.png');
+}
+
+main .container .title ul a {
+    text-decoration: none;
+    font: 700 11px sans-serif;
+    color: #a4a4a4;
+}
+
+main .container .info {
+    padding: 16px;
+    padding-bottom: 0;
+    background: #fff;
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+main .container .info h1 {
+    font: 600 12px sans-serif;
+    margin-bottom: 5px;
+}
+
+main .container .info p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+main .container .info a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 1px solid #C6C6C6;
+    color: #a4a4a4;
+    font: 600 11px sans-serif;
+    padding: 10px;
+}
+
+main .container .info a:hover {
+    color: #333;
+}
+
+main .container .comments {
+    background: #fff;
+    padding: 16px;
+    margin-top: 10px;
+}
+
+main .container .comments header {
+    width: 100%;
+    border-bottom: 1px solid #C6C6C6;
+    padding-bottom: 16px;
+}
+
+main .container .comments h1 {
+    display: block;
+    text-transform: uppercase;
+    font: 400 12px sans-serif;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+main .container .comments h1 span {
+    font-weight: 700;
+}
+
+main .container .comments .wrapper {
+    display: table;
+    width: 100%;
+}
+
+main .container .comments img {
+    display: table-cell;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+main .container .comments form {
+    display: table-cell;
+    width: 100%;
+}
+
+main .container .comments textarea {
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 64px;
+}
