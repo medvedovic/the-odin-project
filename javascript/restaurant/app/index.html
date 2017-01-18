@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="Patrik Medveď" />
+    <title></title>
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- Fonts -->
+    <link href="fonts/RobotoCondensed-Regular.ttf" rel="stylesheet" type="text/css" />
+    <!-- Stylesheets -->
+    <!--build:css css/style.min.css-->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- endbuild -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- jQuery ui -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- custom script -->
+    <!--build:js js/main.min.js -->
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="" class="pull-left">
+                <div class="logo"></div>
+            </a>
+            <ul class="pull-right">
+                <li>
+                    <a id="home-button" class="home-button active">
+                        <div class="home-icon"></div>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="gallery-button" class="gallery-button">
+                        <div class="gallery-icon"></div>
+                        <p>Gallery</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="menu-button" class="daily-menu-button">
+                        <div class="menu-icon"></div>
+                        <p>Menu</p>
+                    </a>
+                </li>
+                <li>
+                    <a id="contact-button" class="contact-button">
+                        <div class="contact-icon"></div>
+                        <p>Contact</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </nav>
+    <main></main>
+    <footer>
+        <div class="container">
+            <p class="pull-left">
+                Patrik Medveď &copy; 2016
+            </p>
+            <a href="mailto:medvedpatrik@outlook.com" class="pull-right">
+                    medvedpatrik@outlook.com
+            </a>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <section class="banner">
+        <div class="container">
+            <span>
+                <h1>
+                    Lorem ipsum 
+                </h1>
+                <h1>
+                    Dolor sit amet
+                </h1>  
+                <a class="button" href="#gallery">Show more</a>
+                <a class="button" href="#menu">Menu</a>
+            </span>
+        </div>
+    </section>
+    <section class="gallery">
+        <ul class="slider">
+            <li>
+                <img src="img/001.jpg" />
+            </li>
+            <li>
+                <img src="img/002.jpg" />
+            </li>
+            <li>
+                <img src="img/003.jpg" />
+            </li>
+            <li>
+                <img src="img/004.jpg" />
+            </li>
+        </ul>
+    </section>
+    <section class="daily-menu">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <a href="#monday" class="active">
+                                Monday
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#tuesday">
+                                Tuesday
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#wednesday">
+                                Wednesday
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#thursday">
+                                Thursday
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#friday">
+                                Friday
+                            </a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="monday">
+                    <tr>
+                        <th scope="row">
+                            Breakfast
+                        </th>
+                        <td class="small">
+                            80g
+                        </td>
+                        <td colspan="2">
+                            <em>Sed sit amet nulla posuere</em>
+                        </td>
+                        <td>
+                            <strong>3,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="special">
+                            Speciality
+                        </th>
+                        <td class="small">
+                            120g
+                        </td>
+                        <td class="special" colspan="2">
+                            <em>Aenean vitae vehicula odio</em>
+                        </td>
+                        <td>
+                            <strong>9,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Lunch
+                        </th>
+                        <td class="small">
+                            100g
+                        </td>
+                        <td colspan="2">
+                            <em>Sed in magna eu dui maximus cursus</em>
+                        </td>
+                        <td>
+                            <strong>4,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Dinner
+                        </th>
+                        <td class="small">
+                            150g
+                        </td>
+                        <td colspan="2">
+                            <em>Morbi euismod hendrerit diam</em>
+                        </td>
+                        <td>
+                            <strong>5,99 €</strong>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tbody id="tuesday" class="hide">
+                    <tr>
+                        <th scope="row">
+                            Breakfast
+                        </th>
+                        <td class="small">
+                            80g
+                        </td>
+                        <td colspan="2">
+                            <em>Sed sit amet nulla posuere</em>
+                        </td>
+                        <td>
+                            <strong>3,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="special">
+                            Speciality
+                        </th>
+                        <td class="small">
+                            120g
+                        </td>
+                        <td class="special" colspan="2">
+                            <em>Aenean vitae vehicula odio</em>
+                        </td>
+                        <td>
+                            <strong>9,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Lunch
+                        </th>
+                        <td class="small">
+                            100g
+                        </td>
+                        <td colspan="2">
+                            <em>Sed in magna eu dui maximus cursus</em>
+                        </td>
+                        <td>
+                            <strong>4,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Dinner
+                        </th>
+                        <td class="small">
+                            150g
+                        </td>
+                        <td colspan="2">
+                            <em>Morbi euismod hendrerit diam</em>
+                        </td>
+                        <td>
+                            <strong>5,99 €</strong>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tbody id="wednesday" class="hide">
+                    <tr>
+                        <th scope="row">
+                            Breakfast
+                        </th>
+                        <td class="small">
+                            80g
+                        </td>
+                        <td colspan="2">
+                            <em>Sed sit amet nulla posuere</em>
+                        </td>
+                        <td>
+                            <strong>3,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="special">
+                            Speciality
+                        </th>
+                        <td class="small">
+                            120g
+                        </td>
+                        <td class="special" colspan="2">
+                            <em>Aenean vitae vehicula odio</em>
+                        </td>
+                        <td>
+                            <strong>9,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Lunch
+                        </th>
+                        <td class="small">
+                            100g
+                        </td>
+                        <td colspan="2">
+                            <em>Sed in magna eu dui maximus cursus</em>
+                        </td>
+                        <td>
+                            <strong>4,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Dinner
+                        </th>
+                        <td class="small">
+                            150g
+                        </td>
+                        <td colspan="2"> 
+                            <em>Morbi euismod hendrerit diam</em>
+                        </td>
+                        <td>
+                            <strong>5,99 €</strong>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tbody id="thursday" class="hide">
+                    <tr>
+                        <th scope="row">
+                            Breakfast
+                        </th>
+                        <td class="small">
+                            80g
+                        </td>
+                        <td colspan="2">
+                            <em>Sed sit amet nulla posuere</em>
+                        </td>
+                        <td>
+                            <strong>3,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="special">
+                            Speciality
+                        </th>
+                        <td class="small">
+                            120g
+                        </td>
+                        <td class="special" colspan="2">
+                            <em>Aenean vitae vehicula odio</em>
+                        </td>
+                        <td>
+                            <strong>9,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Lunch
+                        </th>
+                        <td class="small">
+                            100g
+                        </td>
+                        <td colspan="2">
+                            <em>Sed in magna eu dui maximus cursus</em>
+                        </td>
+                        <td>
+                            <strong>4,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Dinner
+                        </th>
+                        <td class="small">
+                            150g
+                        </td>
+                        <td colspan="2">
+                            <em>Morbi euismod hendrerit diam</em>
+                        </td>
+                        <td>
+                            <strong>5,99 €</strong>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tbody id="friday" class="hide">
+                    <tr>
+                        <th scope="row">
+                            Breakfast
+                        </th>
+                        <td class="small">
+                            80g
+                        </td>
+                        <td colspan="2">
+                            <em>Sed sit amet nulla posuere</em>
+                        </td>
+                        <td>
+                            <strong>3,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="special">
+                            Speciality
+                        </th>
+                        <td class="small">
+                            120g
+                        </td>
+                        <td class="special" colspan="2">
+                            <em>Aenean vitae vehicula odio</em>
+                        </td>
+                        <td>
+                            <strong>9,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Lunch
+                        </th>
+                        <td class="small">
+                            100g
+                        </td>
+                        <td colspan="2">
+                            <em>Sed in magna eu dui maximus cursus</em>
+                        </td>
+                        <td>
+                            <strong>4,50 €</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Dinner
+                        </th>
+                        <td class="small">
+                            150g
+                        </td>
+                        <td colspan="2">
+                            <em>Morbi euismod hendrerit diam</em>
+                        </td>
+                        <td>
+                            <strong>5,99 €</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="table">
+            <form>
+                <h1>Contact Us</h1>
+                <label for="name">Your Name</label>
+                <input id="name" type="text" placeholder="Jon Doe" required> <label for="email">Your Email</label>
+                <input id="email" type="email" placeholder="jondoe@example.com" required>
+                <label for="content">What is on your mind?</label>
+                <textarea id="content" style="resize: none" rows="5" placeholder="Yummy"></textarea>
+                <input id="submit" type="submit" value="Send a message">
+                <div class="clear"></div>
+            </form>
+            <div class="map" id='map'></div>
+        </div>
+    </section>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChBmcJRQtAYgp4GHoIPa7Q3AshVLgI0Uo" async
+        defer></script>
+</body>
+
+</html>

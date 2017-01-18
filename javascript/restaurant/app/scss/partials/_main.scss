@@ -1,0 +1,23 @@
+main {
+    display: block;
+    height: calc(100% - #{2 * $nav-footer-height + $nav-border-width});
+    width: 100%;
+    overflow-y: scroll;
+}
+
+/* Tablet */
+@media screen and (min-width: $max-mobile-width + 1) and (max-width: $max-tablet-width) {
+    main {
+        height: calc(100% - #{$nav-footer-height + $nav-footer-height / 2 + $nav-border-width});
+        overflow: auto;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: $max-tablet-width + 1) {
+    main {
+        height: calc(100% - #{2 * $nav-footer-height + $nav-border-width});
+        overflow: auto;
+    }
+}
+

@@ -1,0 +1,213 @@
+/* Defaults */
+/* Navigation */
+@font-face {
+  font-family: decorative;
+  src: url(../fonts/JosefinSlab-Bold.ttf); }
+
+html, body {
+  background: #f1f1f1;
+  font: 14px/21px "Roboto Condensed", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%; }
+
+strong {
+  font-weight: 700; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+@media screen and (max-width: 480px) {
+  .pull-left {
+    float: none; }
+
+  .pull-right {
+    float: none; } }
+.clear {
+  clear: both; }
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; }
+
+.button {
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: 2px solid #ba387d;
+  color: #ba387d;
+  background: #fff; }
+
+nav {
+  height: 80px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 5px 0px 10px -5px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #ba387d; }
+  nav .container {
+    padding-top: 0;
+    padding-bottom: 0; }
+  nav .logo {
+    display: block;
+    height: 40px;
+    background: white url("../graphic/restaurant-logo.png") center/contain no-repeat; }
+  nav ul {
+    vertical-align: bottom;
+    font-size: 0;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px; }
+    nav ul li {
+      display: inline-block;
+      width: 25%;
+      height: 32px;
+      vertical-align: bottom; }
+      nav ul li a {
+        height: 32px;
+        display: inline-block;
+        text-decoration: none;
+        font-variant: small-caps;
+        color: #333;
+        font: 300 20px/40px decorative;
+        line-height: 32px;
+        cursor: pointer;
+        width: 100%;
+        text-align: center; }
+        nav ul li a:hover {
+          color: #000; }
+        nav ul li a.active {
+          color: #ba387d;
+          border: 2px solid #ba387d;
+          border-bottom: none;
+          background: #fff; }
+        nav ul li a div {
+          display: inline-block;
+          vertical-align: middle;
+          width: 20px;
+          height: 20px; }
+        nav ul li a p {
+          display: none; }
+
+.home-icon {
+  background: url("../graphic/icons-darkgrey/Home.png") center/20px no-repeat; }
+  li:hover .home-icon {
+    background: url("../graphic/icons-filled-black/Home.png") center/20px no-repeat; }
+
+.gallery-icon {
+  background: url("../graphic/icons-darkgrey/Gallery.png") center/20px no-repeat; }
+  li:hover .gallery-icon {
+    background: url("../graphic/icons-filled-black/Gallery.png") center/20px no-repeat; }
+
+.menu-icon {
+  background: url("../graphic/icons-darkgrey/Food.png") center/20px no-repeat; }
+  li:hover .menu-icon {
+    background: url("../graphic/icons-filled-black/Food.png") center/20px no-repeat; }
+
+.contact-icon {
+  background: url("../graphic/icons-darkgrey/Phone.png") center/20px no-repeat; }
+  li:hover .contact-icon {
+    background: url("../graphic/icons-filled-black/Phone.png") center/20px no-repeat; }
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  nav {
+    height: 40px; }
+    nav .logo {
+      display: inline-block;
+      width: 120px;
+      margin: 0 10px; }
+    nav ul {
+      display: inline-block;
+      width: calc(100% - 140px); } }
+/* Desktop */
+@media screen and (min-width: 901px) {
+  nav .logo {
+    width: 200px;
+    height: 80px; }
+  nav ul {
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    width: auto; }
+    nav ul li {
+      width: auto;
+      height: 64px;
+      vertical-align: bottom; }
+      nav ul li a {
+        height: 64px;
+        line-height: 62px;
+        padding: 0 20px;
+        box-sizing: border-box; }
+        nav ul li a p {
+          display: inline-block; } }
+main {
+  display: block;
+  height: calc(100% - 162px);
+  width: 100%; }
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  main {
+    height: calc(100% - 122px); } }
+/* Desktop */
+@media screen and (min-width: 901px) {
+  main {
+    height: calc(100% - 162px); } }
+footer {
+  text-align: center;
+  height: 80px;
+  width: 100%;
+  background: #fff; }
+  footer .container {
+    padding-top: 0;
+    padding-bottom: 0; }
+  footer p,
+  footer a {
+    font: 300 14px decorative;
+    line-height: 40px;
+    display: block; }
+  footer a {
+    text-decoration: none;
+    color: #ba387d; }
+    footer a:hover {
+      color: #000; }
+
+/* Footer */
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  footer p,
+  footer a {
+    line-height: 80px; } }
+/* Desktop */
+@media screen and (min-width: 901px) {
+  footer p,
+  footer a {
+    line-height: 80px;
+    font-size: 18px;
+    display: inline-block; } }
+.banner {
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  background: lightgrey url("../img/banner-background.jpg") center/cover no-repeat; }
+  .banner span {
+    display: inline-block;
+    height: 100%; }
+  .banner h1 {
+    color: #ba387d;
+    font: 700 50px/50px decorative;
+    margin-bottom: 20px;
+    font-variant: small-caps; }

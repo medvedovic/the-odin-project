@@ -1,0 +1,67 @@
+.daily-menu {
+    height: 100%;
+    table {
+        width: 100%;
+        th {
+            padding-right: 45px;
+            text-align: right;
+            font-weight: 700;
+            font-size: 16px;
+            width: 20%;
+        }
+        thead {
+            line-height: 50px;
+            border-bottom: $nav-border;
+            
+            th {
+                font-weight: 400;
+                padding: 0;
+            text-align: center;
+                a {
+                    text-decoration: none;
+                    color: #333;
+                    &.active {
+                        color: #ba387d;
+                        font: 700 25px/50px decorative;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            td {
+                border-bottom: 1px solid #ba387d;
+            }
+        }
+        tbody {
+            th,
+            td {
+                padding-bottom: 22px;
+                vertical-align: top;
+            }
+            th {
+                color: #a9b2b9;
+                font-size: 14px;
+                font-weight: 400;
+                padding-top: 22px;
+                text-transform: uppercase;
+            }
+            td {
+                border-top: 1px solid #dfe2e5;
+                padding-top: 21px;
+                color: #444;
+                &:last-child {
+                    text-align: right;
+                    padding-right: 45px;
+                }
+            }
+            em {
+                font-size: 16px;
+            }
+            .special {
+                color: #ba387d;
+            }
+            &.hide {
+                display: none;
+            }
+        }
+    }
+}

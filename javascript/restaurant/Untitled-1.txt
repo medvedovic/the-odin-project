@@ -1,4 +1,0 @@
-<li>Sed sit amet nulla posuere</li>
-<li>Aenean vitae vehicula odio</li>
-<li>Sed in magna eu dui maximus cursus</li>
-<li>Morbi euismod hendrerit diam</li>

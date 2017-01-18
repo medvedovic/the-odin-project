@@ -1,0 +1,45 @@
+footer {
+    text-align: center;
+    height: $nav-footer-height;
+    width: 100%;
+    background: #fff;
+    .container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    p,
+    a {
+        font: 300 14px decorative;
+        line-height: $nav-footer-height/2;
+        display: block;
+    }
+    a {
+        text-decoration: none;
+        color: $decorative-color;
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+/* Footer */
+@media screen and (min-width: $max-mobile-width + 1) and (max-width: $max-tablet-width) {
+    footer {
+        p,
+        a {
+            line-height: $nav-footer-height;
+        }
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: $max-tablet-width + 1) {
+    footer {
+        p,
+        a {
+            line-height: $nav-footer-height;
+            font-size: 18px;
+            display: inline-block;
+        }
+    }
+}

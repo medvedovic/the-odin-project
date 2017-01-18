@@ -1,0 +1,101 @@
+@import "partials/variables";
+
+@font-face {
+    font-family: decorative;
+    src: url(../fonts/JosefinSlab-Bold.ttf);
+}
+
+html, body {
+    background: #f1f1f1;
+    font: 14px/21px "Roboto Condensed", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+@media screen and (max-width: $max-mobile-width) {
+    .pull-left {
+        float: none;
+    }
+
+    .pull-right {
+        float: none;
+    }
+}
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: $max-container-width;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: $default-padding;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 18px;
+    width: 100px;
+    text-align: center;
+    padding: $default-padding / 2 $default-padding;
+    margin: $default-margin 0;
+    border: 2px solid $decorative-color;
+    color: $decorative-color;
+    background: #fff;
+}
+
+@media screen and (max-width: $max-mobile-width) {
+    .button {
+        margin: $default-margin / 2 0;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.large {
+    max-width: 1200px;
+}
+
+.table {
+    width: 100%;
+    height: 100%;
+    display: table;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: $max-mobile-width) {
+    .table {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@import "partials/navigation";
+@import "partials/main";
+@import "partials/footer";
+@import "partials/banner";
+@import "partials/gallery";
+@import "partials/daily-menu";
+@import "partials/contact";

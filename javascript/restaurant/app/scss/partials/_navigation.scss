@@ -1,0 +1,144 @@
+@function icon($file, $filled: false) {
+    $path: "";
+    @if($filled) {
+        $path: '../graphic/icons-filled-black/#{$file}';
+    } @else {
+        $path: '../graphic/icons-darkgrey/#{$file}';
+    }
+    @return url($path) center/20px no-repeat;
+}
+
+nav {
+    height: $nav-footer-height;
+    width: 100%;
+    background: #fff;
+    box-shadow: 5px 0px 10px -5px rgba(0,0,0,0.3);
+    border-bottom: $nav-border;
+    .container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .logo {
+        display: block;
+        height: $nav-footer-height/2;
+        background: #fff url('../graphic/restaurant-logo.png') center/contain no-repeat;
+    }
+    ul {
+        vertical-align: bottom;
+        font-size: 0;
+        display: block;
+        width: 100%;
+        height: $nav-footer-height/2;
+        line-height: $nav-footer-height/2;
+        li {
+            display: inline-block;
+            width: 25%;
+            height: $nav-footer-height / 2 * 4 / 5;
+            vertical-align: bottom;
+            a {
+                height: $nav-footer-height / 2 * 4 / 5;
+                display: inline-block;
+                text-decoration: none;
+                font-variant: small-caps;
+                color: #333;
+                font: 300 20px/40px decorative;
+                line-height: $nav-footer-height / 2 * 4 / 5;
+                cursor: pointer;
+                width: 100%;
+                text-align: center;
+                &:hover {
+                    color: #000;
+                }
+                &.active {
+                    color: $decorative-color;
+                    border: $nav-border;
+                    border-bottom: none;
+                    background: #fff;
+                }
+                div {
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 20px;
+                    height: 20px;
+                }
+                p {
+                    display: none;
+                }
+            }
+        }  
+    }
+}
+
+.home-icon {
+    background: icon('Home.png');
+    li:hover & {
+        background: icon('Home.png',true);
+    }
+}
+
+.gallery-icon {
+    background: icon('Gallery.png');
+    li:hover & {
+        background: icon('Gallery.png',true);
+    }
+}
+
+.menu-icon {
+    background: icon('Food.png');
+    li:hover & {
+        background: icon('Food.png',true);
+    }
+}
+
+.contact-icon {
+    background: icon('Phone.png');
+    li:hover & {
+        background: icon('Phone.png',true);
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: $max-mobile-width + 1) and (max-width: $max-tablet-width) {
+    nav {
+        height: $nav-footer-height/2;
+        .logo {
+            display: inline-block;
+            width: $medium-logo-width;
+            margin: 0 $default-padding/2;
+        }
+        ul {
+            display: inline-block;
+            width: calc(100% - #{$medium-logo-width + $default-padding});
+        }
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: $max-tablet-width + 1) {
+    nav {
+        .logo {
+            width: $large-logo-width;
+            height: $nav-footer-height;
+        }
+        ul {
+            height: $nav-footer-height;
+            line-height: $nav-footer-height;
+            display: inline-block;
+            width: auto;
+            li {
+                width: auto;
+                height: $nav-footer-height * 4 / 5;
+                vertical-align: bottom;
+                a {
+                    height: $nav-footer-height * 4 / 5;
+                    line-height: $nav-footer-height * 4 / 5 - $nav-border-width;
+                    padding: 0 $default-padding;
+                    box-sizing: border-box;
+                    p {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
