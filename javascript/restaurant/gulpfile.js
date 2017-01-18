@@ -147,3 +147,6 @@ gulp.task('graphic', function() {
     return gulp.src('app/graphic/**/*')
         .pipe(gulp.dest('dist/graphic'))
 })
+
+/* Installs dependencies */
+/* $npm install */
